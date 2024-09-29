@@ -3,9 +3,9 @@ import { useWeatherStore } from "../stores/weatherStore";
 import styles from "./ui.module.scss";
 
 export default function ListFavorites() {
-  const favorites = useWeatherStore((state) => state.state.favorites);
+  const favorites = useWeatherStore((state) => state.favorites);
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center mt-5 '>
+    <div className='d-flex flex-column justify-content-center align-items-center m-5 '>
       <h1>Favorites Cities</h1>
       <div className={`list-group ${styles.width} shadow`}>
         {favorites.map((city, index) => (

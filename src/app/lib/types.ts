@@ -34,10 +34,8 @@ export interface weatherDataTypes {
 }
 
 export interface WeatherState {
-  state: {
-    weatherData: weatherDataTypes | null;
-    favorites: string[];
-  };
+  weatherData: weatherDataTypes | null;
+  favorites: string[];
   loading: boolean;
   error: boolean;
   setWeatherData: (weather: weatherDataTypes) => void;

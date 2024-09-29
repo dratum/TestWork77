@@ -5,8 +5,8 @@ import styles from "./ui.module.scss";
 import Spinner from "./spinner/spinner";
 
 export default function CardCityWeather() {
-  const weatherData = useWeatherStore((state) => state.state.weatherData);
-  const favCities = useWeatherStore((state) => state.state.favorites);
+  const weatherData = useWeatherStore((state) => state.weatherData);
+  const favCities = useWeatherStore((state) => state.favorites);
   const { loading, addFavorite } = useWeatherStore();
 
   if (loading) {
